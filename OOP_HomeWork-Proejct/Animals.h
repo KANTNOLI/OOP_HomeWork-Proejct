@@ -47,5 +47,29 @@ public:
 	}
 
 
+	Zoo() {  // дефолтная конструкция 
+		voracity = 4;
+		weight = 45;
+		type = "predator";
+		name = "wolf";
+	}
+
+	~Zoo() {
+		cout << "construction is clear!" << endl;
+	}
+
+
+
+	void init(float vora, float weig, string t, string n) {
+		voracity = vora;
+		weight = weig;
+		type = t;
+		name = n;
+	}
+
+	string convert_to_string() {
+		return "Name: " + name + ", " + "type:" + type + ", " + "voracity: " + to_string(voracity) + ", " + "weight: " + to_string(weight);
+	}
+
 
 };
