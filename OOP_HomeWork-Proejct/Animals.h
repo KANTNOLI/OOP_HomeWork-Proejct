@@ -54,6 +54,14 @@ public:
 		name = "wolf";
 	}
 
+	Zoo(string t, string n, float v, float w) {  //  конструкция с параметрами
+		voracity = v;
+		weight = w;
+		type = t;
+		name = n;
+	}
+
+
 	~Zoo() {
 		cout << "construction is clear!" << endl;
 	}
